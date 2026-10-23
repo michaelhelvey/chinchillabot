@@ -1,0 +1,16 @@
+packages:
+  - packages/*
+catalog:
+  "@effect/platform-node": ^4.0.6
+  "@effect/tsgo": 0.56.0
+  "@effect/vitest": ^4.0.6
+  effect: ^4.0.6
+allowBuilds:
+  esbuild: true
+minimumReleaseAgeExclude:
+  - "@michaelhelvey/vite-config"
+onlyBuiltDependencies:
+  - esbuild
+overrides:
+  vite@*: npm:@voidzero-dev/vite-plus-core@1.4.0
+  vitest@*: 5.0.5

@@ -1,0 +1,44 @@
+{
+  "name": "@michaelhelvey/chinchillabot",
+  "version": "1.0.0",
+  "description": "idk yet honestly",
+  "license": "MIT",
+  "author": {
+    "name": "Michael Helvey",
+    "email": "michael.helvey1@gmail.com",
+    "url": "https://github.com/michaelhelvey"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelhelvey/chinchillabot",
+    "directory": "packages/chinchillabot"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "node ./src/index.ts"
+  },
+  "dependencies": {
+    "@effect/platform-node": "catalog:",
+    "effect": "catalog:"
+  },
+  "devDependencies": {
+    "@effect/vitest": "catalog:"
+  },
+  "engines": {
+    "node": ">=26"
+  }
+}

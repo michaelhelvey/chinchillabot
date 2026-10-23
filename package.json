@@ -1,0 +1,30 @@
+{
+  "name": "chinchillabot",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "prepare": "vp config && effect-tsgo patch --typescript --oxlint",
+    "dev": "pnpm --filter @michaelhelvey/chinchillabot dev",
+    "format": "vp fmt",
+    "lint": "vp lint --fix",
+    "check": "vp check",
+    "typecheck": "tsrs --noEmit",
+    "test": "vp test run",
+    "validate": "vp run validate-task"
+  },
+  "devDependencies": {
+    "@effect/language-service": "^0.87.5",
+    "@effect/tsgo": "catalog:",
+    "@michaelhelvey/vite-config": "2.0.8",
+    "@types/node": "26.6.5",
+    "@vitest/coverage-v8": "5.0.5",
+    "tsrs": "^0.18.0-ts7.1.0-dev.20260929",
+    "typescript": "7.1.0-beta",
+    "vite-plus": "1.4.0"
+  },
+  "engines": {
+    "node": ">=26"
+  },
+  "packageManager": "pnpm@12.4.0+sha512.37536c26ed40ab4134b6511e09f6b27f3ebb45687468f2406ca3805279a4e5ca158c1931350ad9774d6ab2108d71b3dbaeb39943159294375e4d053e8e05685c"
+}
